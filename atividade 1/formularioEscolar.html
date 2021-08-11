@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=>">
+        <title>Formulário Escolar</title>
+    </head>
+    <style>
+        fieldset{
+            width: 20%;
+        }
+    </style>
+    <body>
+        <fieldset>
+            <form action="/princ.html" method="POST">
+                <header>
+                    <label>Dados pessoais</label>
+                </header>
+                <br>
+                <section class="information">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Seu nome.." name="nome" required>
+                    <br>
+                    <label for="idade">Idade:</label>
+                    <input type="text" id="idade" placeholder="Sua idade.." name="idade" required>
+                    <br><br>
+                    <label>Dados Profissionais</label>
+                    <br><br>
+                    <label for="escolaridade">Escolaridade</label>
+                    <select id="escolaridade">
+                        <option value="Ensino Médio">Ensino Médio</option>
+                        <option value="Graduação">Graduação</option>
+                        <option value="Pós-graduação">Pós-graduação</option>
+                        <option value="Outros">Outros</option>
+                        <option selected disabled value="">Selecione</option>
+                    </select>
+                    <br>
+                    <label for="area">Área de Atuação</label>
+                    <input id="gerencia" type="radio" name="radio" value="Gerência">
+                    <label for="gerencia">Gerência</label>
+                    <input id="financeiro" type="radio" name="radio" value="Financeiro">
+                    <label for="financeiro">financeiro</label>
+                    <input id="recepcao" type="radio" name="radio" value="Recepção">
+                    <label for="recepcao">Recepção</label>
+                </section>
+            </form>
+        </fieldset>
+    </body>
+</html>

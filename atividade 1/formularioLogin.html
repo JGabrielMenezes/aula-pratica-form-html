@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Academia</title>
+    </head>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset{
+            margin-left: 35%;
+            margin-top: 15%;
+            width: 27%;
+            height: 50%;
+            color: black;
+            background-color: white;
+            font-weight: bold;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        #user, #senha{
+            width: 50%;
+            margin-left: 7%;
+            border: 2px solid black;
+        }
+
+        label, a{
+            padding-left: 5%;
+        }
+        
+        .buttons{
+            margin-left: 100px;
+        }
+
+    </style>
+    <body>
+        <div class="box">
+            <fieldset>
+                <form action="/princ.html" method="POST">
+                    <header>
+                        <h1><b>Tela de Login</b></h1>
+                    </header>
+                    <br><br>
+                    <div class="user">
+                        <label for="user">Usuário</label>
+                        <input id="user" type="text" name="nome" required>
+                    </div>
+                    <br><br>
+                    <div class="password">
+                        <label for="senha">Senha</label>
+                        <input id="senha" style="width: 20%; margin-left: 46px;" class="inputForm" type="text" name="senha" required>
+                        <a href="https://academia.iphac.org.br/">Esqueceu a senha? Clique aqui</a>
+                    </div>
+                    <br><br><br>
+                    <div class="buttons">
+                        <input type="submit" id="botao" name="botao" value="Fazer Login">
+                        <input type="submit" id="botao2" name="botao" value="Cadastrar"> 
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

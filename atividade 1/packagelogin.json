@@ -1,0 +1,9 @@
+{
+  "name": "formulariologin",
+  "version": "1.0.0",
+  "description": "formulario de login",
+  "main": "furmularioLogin.html",
+  "scripts": {
+  "author": "gabriel",
+  "license": "ISC"
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário Colegial</title>
+        <style>
+            .fd1{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                width: 40%;
+                margin-left: 30%;
+                margin-top: 210px;
+                font-weight: bold;
+            }
+
+            label{
+                margin-left: 5px;
+            }
+
+            table{
+                margin-left: 17%;
+            }
+
+            textarea {
+                overflow-y: scroll;
+                resize: none; 
+            }
+            
+            input{
+                border-radius: 1px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <fieldset class="fd1">
+            <header>
+                <h4>▶ Manutenção do Órgão Colegiado</h4>
+            </header>
+            <section class="tbl">
+                <table border="1">
+                    <tr>
+                        <th style="background-color: rgb(208, 219, 219);">Unidade</th>
+                        <td style="background-color: rgb(242, 247, 247)">FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+                    </tr>
+                        <th style="background-color: rgb(208, 219, 219);">Tipo Colegiado</th>
+                        <td style="background-color: rgb(242, 247, 247)">CONGREGAÇÃO</td>
+                    </tr>
+                </table>
+            </section>
+            <section style="background-color: rgb(242, 247, 247);" class="form">
+                <form action="/nada.html" method="get">
+                <header>
+                    <h4 style="background-color: rgb(208, 219, 219);">Orgão Colegiado</h4>
+                </header>
+                <label for="nome">Nome</label>
+                <input style="margin-left: 15%; width: 60%;" id="nome" type="text" name="nome" required><br><br>
+                <label for="sigla">Sigla</label>
+                <input style="margin-left: 16%; width: 10%;" id="sigla" type="text" name="sigla">
+                <label style="margin-left: 35%" >Status</label>
+                <select style="margin-left: 10%;">
+                    <option value="ativado">ATIVADO</option>
+                    <option value="deativado">DESATIVADO<option>
+                    <option selected disabled value="">Selecione</option>
+                </select> <br><br>
+                <label for="date">Data de Ativação</label>
+                <input style="margin-left: 5%; width: 10%;" type="text" name="date" id="date">
+                <label style="margin-left: 30%;" for="date2">Data Desativação</label>
+                <input style="width: 10%; margin-left: 5%;" type="text" name="date2" id="date2"><br><br>
+                <label for="orgao">Orgão de Origem</label>
+                <input style="margin-left: 4.6%; width: 52%;" type="text" name="texto" id="orgao">
+                <input style="margin-left: %;" type="submit" name="botao1" value="Buscar"><br><br>
+                <label for="orgao2">Orgão Superior</label>
+                <input style="margin-left: 6.4%; width: 52%;" type="text" name="orgao2" id="orgao2">
+                <input type="submit" name="botao2" value="Buscar"><br><br>
+                <label for="areatext">Documentação</label>
+                <textarea style="margin-left: 7.3%;" name="mensagem" id="areatext" cols="45" rows="3"></textarea><br><br>
+                <input style="margin-left: 19%;" type="submit" name="submit" id="submit1" value="Salvar">
+                <input style="margin-left: 50%;" type="submit" name="submit" id="submit2" value="Excluir"><br><br>
+                </form>
+            </fieldset>
+    </body>
+</html>
